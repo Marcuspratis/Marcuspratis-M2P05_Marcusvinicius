@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+ 
+  
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-section {
+  padding: 20px;
+  background-image: url(../img/campo\ de\ futebol.jpeg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+h1{
+  font-size: 20px #333fff;
+}
+h2{
+  font-size: 15px #B8B9C4;
+}
+
+
+table {
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px;
+}
+td,th{
+  border: 1px solid green;
+  width: 300px;
+  padding: 10px;
+}
+
+.column {
+  flex: 1;
+  margin: 10px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+.secondary-section {
+  padding: 20px;
+}
+img{ 
+  width: 300px;
+  height: 300px;
+  float: ;
+}
+h3{ 
+  font-size: 18px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+li .informacion {
+  background-color: #fff;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .menu li {
+    margin-right: 15px;
+  }
+  .column {
+    margin: 5px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu li {
+    display: block;
+    margin: 10px 0;
+  }
+  .columns {
+    flex-direction: column;
+  }
+  .column {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 15px;
+  }
+  .main-section, .secondary-section, footer {
+    padding: 15px;
+  }
+  .menu li {
+    margin: 5px 0;
+  }
+  .column {
+    margin: 5px 0;
+    padding: 10px;
+  }
+}
